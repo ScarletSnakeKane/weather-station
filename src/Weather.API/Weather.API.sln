@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.API", "Weather.API.csproj", "{9782CA48-DEF5-49FD-A1C5-F04008210EB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{58CFD013-86A6-4D3C-AC9A-2FE566745784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "..\Core\Core.csproj", "{D9EE6C6E-0404-4969-8E19-BD918896BB96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{1FFCA8FD-9834-4FF6-A89F-59642C610A65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BC5D5495-CC88-4F60-A01C-9385544450A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Infrastructure", "..\..\tests\Test.Infrastructure\Test.Infrastructure.csproj", "{42A62BCD-6DB8-4715-A57E-05B24206300A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Core", "..\..\tests\Test.Core\Test.Core.csproj", "{2227979A-35B5-4DAA-BF4A-DDDA0F48B6C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{06481190-8F48-4FC6-BE2C-85835CE7D101}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.dockerignore = ..\..\.dockerignore
+		..\..\.env = ..\..\.env
+		..\..\.gitignore = ..\..\.gitignore
+		..\..\docker-compose.yml = ..\..\docker-compose.yml
+		..\..\Dockerfile = ..\..\Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9782CA48-DEF5-49FD-A1C5-F04008210EB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9782CA48-DEF5-49FD-A1C5-F04008210EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9782CA48-DEF5-49FD-A1C5-F04008210EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9782CA48-DEF5-49FD-A1C5-F04008210EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9EE6C6E-0404-4969-8E19-BD918896BB96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9EE6C6E-0404-4969-8E19-BD918896BB96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9EE6C6E-0404-4969-8E19-BD918896BB96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9EE6C6E-0404-4969-8E19-BD918896BB96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FFCA8FD-9834-4FF6-A89F-59642C610A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FFCA8FD-9834-4FF6-A89F-59642C610A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FFCA8FD-9834-4FF6-A89F-59642C610A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FFCA8FD-9834-4FF6-A89F-59642C610A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A62BCD-6DB8-4715-A57E-05B24206300A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A62BCD-6DB8-4715-A57E-05B24206300A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A62BCD-6DB8-4715-A57E-05B24206300A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A62BCD-6DB8-4715-A57E-05B24206300A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2227979A-35B5-4DAA-BF4A-DDDA0F48B6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2227979A-35B5-4DAA-BF4A-DDDA0F48B6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2227979A-35B5-4DAA-BF4A-DDDA0F48B6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2227979A-35B5-4DAA-BF4A-DDDA0F48B6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9782CA48-DEF5-49FD-A1C5-F04008210EB0} = {58CFD013-86A6-4D3C-AC9A-2FE566745784}
+		{D9EE6C6E-0404-4969-8E19-BD918896BB96} = {58CFD013-86A6-4D3C-AC9A-2FE566745784}
+		{1FFCA8FD-9834-4FF6-A89F-59642C610A65} = {58CFD013-86A6-4D3C-AC9A-2FE566745784}
+		{42A62BCD-6DB8-4715-A57E-05B24206300A} = {BC5D5495-CC88-4F60-A01C-9385544450A8}
+		{2227979A-35B5-4DAA-BF4A-DDDA0F48B6C2} = {BC5D5495-CC88-4F60-A01C-9385544450A8}
+	EndGlobalSection
+EndGlobal
