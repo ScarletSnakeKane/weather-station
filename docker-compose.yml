@@ -13,8 +13,8 @@ services:
       WEBSITES_INCLUDE_CLOUD_CERTS: "true"
       AzureWebJobsStorage: UseDevelopmentStorage=true
       FUNCTIONS_WORKER_RUNTIME: dotnet-isolated
-      WeatherApi__Key: ${WEATHER_API_KEY}
-      VisualCrossing__Key: ${VISUAL_CROSSING_KEY}
+      WEATHER_API_KEY: ${WEATHER_API_KEY}
+      VISUAL_CROSSING_KEY: ${VISUAL_CROSSING_KEY}
 
     env_file:
       - .env

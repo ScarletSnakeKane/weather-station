@@ -16,7 +16,7 @@ namespace Infrastructure.Providers
         public VisualCrossingProvider(HttpClient http, IConfiguration config)
         {
             _http = http;
-            _apiKey = config["VisualCrossing:Key"]
+            _apiKey = config["VISUAL_CROSSING_KEY"]
                       ?? throw new Exception("VisualCrossing key missing");
         }
 

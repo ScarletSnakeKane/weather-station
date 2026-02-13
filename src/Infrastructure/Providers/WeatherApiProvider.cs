@@ -16,7 +16,7 @@ namespace Infrastructure.Providers
         public WeatherApiProvider(HttpClient http, IConfiguration config)
         {
             _http = http;
-            _apiKey = config["WeatherApi:Key"] ?? throw new Exception("WeatherAPI key missing");
+            _apiKey = config["WEATHER_API_KEY"] ?? throw new Exception("WeatherAPI key missing");
         }
 
         public async Task<ProviderResult> GetForecastAsync(string city, string country, DateTime date)
