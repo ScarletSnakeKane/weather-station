@@ -16,9 +16,9 @@ builder.Services.AddHttpClient<OpenMeteoProvider>();
 builder.Services.AddHttpClient<WeatherApiProvider>();
 builder.Services.AddHttpClient<VisualCrossingProvider>();
 
-builder.Services.AddSingleton<IWeatherProvider, OpenMeteoProvider>();
-builder.Services.AddSingleton<IWeatherProvider, WeatherApiProvider>();
-builder.Services.AddSingleton<IWeatherProvider, VisualCrossingProvider>();
+builder.Services.AddTransient<IWeatherProvider, OpenMeteoProvider>();
+builder.Services.AddTransient<IWeatherProvider, WeatherApiProvider>();
+builder.Services.AddTransient<IWeatherProvider, VisualCrossingProvider>();
 
 builder.Services.AddSingleton<IWeatherAggregator, WeatherAggregator>();
 
