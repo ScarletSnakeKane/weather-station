@@ -20,7 +20,7 @@ jobs:
 
       - name: Log in to ACR
         run: |
-          echo ${{ secrets.REGISTRY_PASSWORD }} | docker login ${{ secrets.REGISTRY_LOGIN_SERVER }} \
+          echo "${{ secrets.REGISTRY_PASSWORD }}" | docker login ${{ secrets.REGISTRY_LOGIN_SERVER }} \
             --username ${{ secrets.REGISTRY_USERNAME }} --password-stdin
 
       - name: Build Docker image
