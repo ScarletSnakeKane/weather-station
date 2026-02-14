@@ -1,0 +1,22 @@
+meta {
+  name: weather-function-local
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8080/api/weather?city=London&country=UK&date=2026-02-12
+  body: none
+  auth: inherit
+}
+
+params:query {
+  city: London
+  country: UK
+  date: 2026-02-12
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,22 @@
+meta {
+  name: weather-function
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://weather-station-api.livelysmoke-0269b5a2.westeurope.azurecontainerapps.io/api/weather?city=London&country=UK&date=2026-02-13
+  body: none
+  auth: inherit
+}
+
+params:query {
+  city: London
+  country: UK
+  date: 2026-02-13
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
