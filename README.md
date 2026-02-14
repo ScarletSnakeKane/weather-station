@@ -16,7 +16,7 @@ Deployed to Azure Container Apps with full CI/CD via GitHub Actions.
 - CI/CD via GitHub Actions + Azure Container Registry
 Secrets stored in Container Apps Environment Variables
 
-## Example Request
+## Example Requests
 ```text
 - http://localhost:8080/api/weather?city=London&country=UK&date=2026-02-12
 - https://weather-station-api.livelysmoke-0269b5a2.westeurope.azurecontainerapps.io/api/weather?city=London&country=UK&date=2026-02-13
@@ -58,17 +58,18 @@ Secrets stored in Container Apps Environment Variables
 | VISUAL_CROSSING_KEY   | API key for Visual Crossing     |
 
 ## Running Locally (Docker)
-- ## Create .env file
+- ### Create .env file
 ```env
 WEATHER_API_KEY=your_key
 VISUAL_CROSSING_KEY=your_key
 ```
-- ## Run with Docker Compose
+- ### Run with Docker Compose
  ```bash
 docker-compose up --build
 ```
-- ## Test locally
+- ### Test locally
  ```text
 http://localhost:8080/api/weather?city=London&country=UK&date=2026-02-13
 ```
+
 
