@@ -23,7 +23,8 @@ Secrets stored in Container Apps Environment Variables
 ```
 
 ## Example Response
-```json {
+```json
+ {
   "City": "London",
   "Country": "UK",
   "Date": "2026-02-13T00:00:00",
@@ -70,3 +71,4 @@ docker-compose up --build
  ```text
 http://localhost:8080/api/weather?city=London&country=UK&date=2026-02-13
 ```
+
